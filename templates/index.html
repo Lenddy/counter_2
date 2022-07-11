@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		form {
+			display: inline-block;
+		}
+	</style>
+	<body>
+		<h1>{{session["number_of_visits"]}}</h1>
+
+		<form action="/add_to_count" method="post">
+			<button>add by 3</button>
+		</form>
+
+		<form action="/destroy_session" method="post">
+			<button>reset</button>
+		</form>
+	</body>
+</html>
